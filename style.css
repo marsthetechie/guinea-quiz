@@ -1,0 +1,31 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.whole {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #99d378;
+}
+
+.guineaPig {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.menu {
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    background-color: #b278d3;
+    color: #fff;
+    outline: #fff;
+}
