@@ -1,57 +1,57 @@
 'use strict';
 var questions = {
-  q1: {
+  q0: {
     text: "Have you ever had a guinea pig before?",
     options: {
-      o1: "No, first time",
-      o2: "Yes"
+      o0: "No, first time",
+      o1: "Yes"
+    }
+  },
+  q1: {
+    text: "Prefered hair type of your future pet?",
+    options: {
+      o0: "short",
+      o1: "rosettes",
+      o2: "long-flowing",
+      o3: "long soft locks"
     }
   },
   q2: {
-    text: "Prefered hair type of your future pet?",
+    text: "Temperament and personality?",
     options: {
-      o1: "short",
-      o2: "rosettes",
-      o3: "long-flowing",
-      o4: "long soft locks"
+      o0: "friendly and docile",
+      o1: "mischievous and energetic",
+      o2: "curious and alert",
+      o3: "gentle and shy"
     }
   },
   q3: {
-    text: "Temperament and personality?",
-    options: {
-      o1: "friendly and docile",
-      o2: "mischievous and energetic",
-      o3: "curious and alert",
-      o4: "gentle and shy"
+    text: "How much time can you spend taking care of your new pet?",
+    option: {
+      o0: "Just for the necessities",
+      o1: "Plenty of time!"
     }
   },
   q4: {
-    text: "How much time can you spend taking care of your new pet?",
-    option: {
-      o1: "Just for the necessities",
-      o2: "Plenty of time!"
+    text: "Do you have kids?",
+    options: {
+      o0: "Yes",
+      o1: "No"
     }
   },
   q5: {
-    text: "Do you have kids?",
+    text: "How old is your youngest child?",
     options: {
-      o1: "Yes",
-      o2: "No"
+      o0: "0-7",
+      o1: "8-15"
     }
   },
   q6: {
-    text: "How old is your youngest child?",
-    options: {
-      o1: "0-7",
-      o2: "8-15"
-    }
-  },
-  q7: {
     text: "How would you describe yourself?",
     options: {
-      o1: "Lazy",
-      o2: "Enthusiast",
-      o3: "Responsible and well organized"
+      o0: "Lazy",
+      o1: "Enthusiast",
+      o2: "Responsible and well organized"
     }
   }
 }

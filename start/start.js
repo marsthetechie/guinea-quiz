@@ -2,29 +2,29 @@
 
 // Starts the questions
 function start() {
-
-    // Makes text for the first question
     let text1 = document.createElement('p');
-    text1.innerHTML = questions.q1.text;
+    text1.innerHTML = questions.q0.text;
     
-    // Empty the div
     div.innerHTML = '';
 
-    // Add first question to the div
     div.appendChild(text1);
 
-    // Make and add buttons for options
-    for (let key in questions.q1.options) {
+    for (let key in questions.q0.options) {
         let button = document.createElement('button');
         button.setAttribute('class', 'btn');
-        button.innerHTML = questions.q1.options[key];
+        button.innerHTML = questions.q0.options[key];
         div.appendChild(button);
     }
 
-    // Add id's to the buttons
     let buttons = document.querySelectorAll('button');
     for (let i = 0; i < buttons.length; i++) {
-        buttons[i].setAttribute('id', i);
+        let idB = `o${i}`;
+        buttons[i].setAttribute('id', idB);
     }
     
+    let o0 = document.getElementById('o0');
+    o0.addEventListener('click', answer0);
+
+    let o1 = document.getElementById('o1');
+    o1.addEventListener('click', answer1);
 }
