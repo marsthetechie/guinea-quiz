@@ -27,7 +27,7 @@ var questions = {
   },
   q3: {
     text: "How much time can you spend taking care of your new pet?",
-    option: {
+    options: {
       o0: "Just for the necessities",
       o1: "Plenty of time!"
     }
