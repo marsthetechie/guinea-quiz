@@ -34,4 +34,9 @@ function secondQuestion() {
         let idB = `o${i}`;
         buttons[i].setAttribute('id', idB);
     }
+    let answerButtons = [];
+    for (let i = 0; i < buttons.length; i++) {
+        answerButtons[i] = document.getElementById('o' + i);
+        answerButtons[i].addEventListener('click', secondAnswers['answer' + [i]]);
+    }
 }
