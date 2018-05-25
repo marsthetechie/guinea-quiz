@@ -21,10 +21,11 @@ function start() {
         let idB = `o${i}`;
         buttons[i].setAttribute('id', idB);
     }
-    
-    let o0 = document.getElementById('o0');
-    o0.addEventListener('click', answer0);
 
-    let o1 = document.getElementById('o1');
-    o1.addEventListener('click', answer1);
+    let answerButtons = [];
+    for (let i = 0; i < buttons.length; i++) {
+        answerButtons[i] = document.getElementById('o' + i);
+        answerButtons[i].addEventListener('click', firstAnswers['answer' + [i]]);
+    }
+    
 }

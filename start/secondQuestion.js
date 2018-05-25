@@ -1,17 +1,18 @@
 'use strict';
 
-function answer0() {
-    american.addPoints();
-    secondQuestion();
-}
-
-function answer1() {
-    american.addPoints();
-    abyssinian.addPoints();
-    peruvian.addPoints();
-    silkie.addPoints();
-    secondQuestion();
-}
+let firstAnswers = {
+    answer0: function () {
+        american.addPoints();
+        secondQuestion()
+    },
+    answer1: function() {
+        american.addPoints();
+        abyssinian.addPoints();
+        peruvian.addPoints();
+        silkie.addPoints();
+        secondQuestion();
+    }
+};
 
 function secondQuestion() {
     let text2 = document.createElement('p');
