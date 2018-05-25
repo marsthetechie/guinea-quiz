@@ -1,31 +1,36 @@
 'use strict';
 
-let firstAnswers = {
+let thirdAnswers = {
     answer0: function() {
         american.addPoints();
-        secondQuestion()
+        fourthQuestion();
     },
     answer1: function() {
-        american.addPoints();
         abyssinian.addPoints();
+        fourthQuestion();
+    },
+    answer2: function() {
         peruvian.addPoints();
+        fourthQuestion();
+    },
+    answer3: function() {
         silkie.addPoints();
-        secondQuestion();
+        fourthQuestion();
     }
-};
+}
 
-function secondQuestion() {
-    let text2 = document.createElement('p');
-    text2.innerHTML = questions.q1.text;
+function fourthQuestion() {
+    let text4 = document.createElement('p');
+    text4.innerHTML = questions.q3.text;
 
     div.innerHTML = '';
 
-    div.appendChild(text2);
+    div.appendChild(text4);
 
-    for (let key in questions.q1.options) {
+    for (let key in questions.q3.options) {
         let button = document.createElement('button');
         button.setAttribute('class', 'btn');
-        button.innerHTML = questions.q1.options[key];
+        button.innerHTML = questions.q3.options[key];
         div.appendChild(button);
     }
 
@@ -34,9 +39,10 @@ function secondQuestion() {
         let idB = `o${i}`;
         buttons[i].setAttribute('id', idB);
     }
+
     let answerButtons = [];
     for (let i = 0; i < buttons.length; i++) {
         answerButtons[i] = document.getElementById('o' + i);
-        answerButtons[i].addEventListener('click', secondAnswers['answer' + [i]]);
+        answerButtons[i].addEventListener('click', fourthAnswers['answer' + [i]]);
     }
 }
