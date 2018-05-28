@@ -1,3 +1,7 @@
+@main: #99d378;
+@buttons: #b278d3;
+@text: #fff;
+
 html, body {
     margin: 0;
     padding: 0;
@@ -9,7 +13,7 @@ html, body {
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: #99d378;
+    background-color: @main;
 }
 
 .guineaPig {
@@ -25,7 +29,12 @@ html, body {
 }
 
 .btn {
-    background-color: #b278d3;
-    color: #fff;
-    outline: #fff;
+    background-color: @buttons;
+    color: @text;
+
+}
+
+.btn:hover {
+    background-color: @text;
+    color: @buttons;
 }
