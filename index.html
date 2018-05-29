@@ -1,37 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet/less" type="text/css" href="styles.less" />
-    <script src="tools/less.min.js" ></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    
-    <title>Guinea Quiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet/less" type="text/css" href="styles.less" />
+  <script src="tools/less.min.js"></script>
+
+  <title>Guinea Quiz</title>
 </head>
+
 <body>
-    <article class="whole">
-    <section class="guineaPig">
+  <article>
+    <h1 class="title">Guinea Quiz</h1>
+    <div class="whole">
+      <section class="guineaPig">
         <img src="imgs/Hamtaro_Caminando.gif" alt="Guinea Pig walking">
-    </section>
-    <section class="menu">
+      </section>
+      <section class="menu">
         <a href="start/start.html" class="btn">Get Started</a>
-        <button class="btn trigger">Help</button>
-        <div class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h1>Looking for help?</h1>
-                <h2>You're at the right place!</h2>
-                <p>This quiz shouldn't be too hard!</p>
-                <p>There is no right of wrong answer. Just press "Get Started" button, press "Start" on the next page and answer all the questions by pressing one of the buttons.</p>
-                <p>If you have any questions you can send us a message and we'll try to help you as much as we can!</p>
-                <p>You can find us on social networks. The links are at the bottom of every page.</p>
-                <p>Have fun!</p>
-            </div>
+        <button class="btn trigger" id="help">Help</button>
+        <div class="modal" id="helpMod">
+          <div class="modal-content">
+            <span class="close" id="close-help">&times;</span>
+            <h1>Looking for help?</h1>
+            <h2>You're at the right place!</h2>
+            <p>This quiz shouldn't be too hard!</p>
+            <p>There is no right of wrong answer. Just press "Get Started" button, press "Start" on the next page and answer
+              all the questions by pressing one of the buttons.</p>
+            <p>If you have any questions you can send us a message and we'll try to help you as much as we can!</p>
+            <p>You can find us on social networks. The links are at the bottom of every page.</p>
+            <p>Have fun!</p>
+          </div>
         </div>
-        <button class="btn trigger">About</a>
-    </section>
-    </article>
+        <button class="btn trigger" id="about">About</button>
+          <div class="modal" id="aboutMod">
+            <div class="modal-content">
+              <span class="close" id="close-about">&times;</span>
+              <h1>About Guinea Quiz</h1>
+              <p>For all of you wondering about what breed of a guinea pig you should get next or for the first time, there
+                is our little quiz. Be truthful with your answers and our little program will suggest the best match. Of
+                course, that is just a suggestion, you should always check multiple resources, learn more about them and
+                make your own decision.</p>
+              <p>At this moment our database has four types of guinea pigs: The American, The Abyssinian, The Peruvian and The
+                Silkie. There will be more pigs added.</p>
+              <p>You can find us on social networks. The links are at the bottom of every page.</p>
+              <p>Have fun!</p>
+            </div>
+          </div>
+      </section>
+    </div>
+  </article>
+  <script src="modals.js"></script>
 </body>
+
 </html>
