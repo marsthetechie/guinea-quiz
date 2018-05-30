@@ -3,6 +3,7 @@
 @text-color: #fff;
 @main-font: 'Lobster Two', cursive;
 @text-font: 'Lato', sans-serif;
+@footer-color: #000;
 
 html, body, article {
     margin: 0;
@@ -13,7 +14,7 @@ body {
     background-color: @main-color;
 }
 
-article h1 {
+header, h1 {
     text-align: center;
     font-family: @main-font;
     color: @text-color;
@@ -35,20 +36,62 @@ article h1 {
     text-align: center;
     display: flex;
     flex-direction: column;
+    padding: 10%;
 }
 
 .btn {
-    background-color: @buttons-color;
-    color: @text-color;
-    font-family: @main-font;
-    font-size: 3em;
-    margin: 1%; 
-    cursor: pointer;  
+    border: none;
+	font-family: @main-font;
+	font-size: 2rem;
+	color: @text-color;
+	background: @buttons-color;
+	cursor: pointer;
+	display: inline-block;
+	margin: 15px 30px;
+	letter-spacing: 1px;
+    outline: none;
+    text-decoration: none;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+    transition: all 0.3s; 
+
+    padding: 25px 120px 25px 60px;
+	overflow: hidden; 
 }
 
 .btn:hover {
     background-color: @text-color;
     color: @buttons-color;
+    width: 40%;
+}
+
+.btn:before {
+    left: auto;
+	right: 10px;
+	z-index: 2;
+}
+
+.veil {
+	content: '';
+	position: absolute;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 50%;
+	height: 200%;
+	background: rgba(255,255,255,0.1);
+	z-index: -1;
+	right: 0;
+	top: 0;
+	margin: -5px 0 0 -5px;
+	// -webkit-transform-origin: 0 0;
+	// -webkit-transform: rotate(-20deg);
+	// -moz-transform-origin: 0 0;
+	// -moz-transform: rotate(-20deg);
+	// -ms-transform-origin: 0 0;
+	// -ms-transform: rotate(-20deg);
+	// transform-origin: 0 0;
+//	transform: rotate(-20deg);
 }
 
 .modal {
@@ -97,6 +140,11 @@ article h1 {
 }
 
 h2, p {
-    font-family: @text-font;
+    font-family: @main-font;
     color: @text-color;
+}
+
+footer {
+    background-color:@footer-color;
+    padding: 5%;
 }
