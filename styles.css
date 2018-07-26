@@ -1,24 +1,23 @@
-@main-color: rgba(250, 152, 73, 0.5);
-@buttons-color: #d16f1f;
-@text-color: #fff;
-@main-font: 'Lobster Two', cursive;
-@text-font: 'Lato', sans-serif;
-@footer-color: #000;
-
-html, body, article {
+html, body {
     margin: 0;
     padding: 0;
 }
 
-body {
-    background-color: @main-color;
+article {
+    background: linear-gradient(rgb(218, 127, 67), rgb(236, 236, 98));
 }
 
-header, h1 {
+header {
+    background-color: rgb(218, 127, 67);
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
     text-align: center;
-    font-family: @main-font;
-    color: @text-color;
-    font-size: 5rem;
+    font-family: 'Lobster Two';
+    font-size: 5em;
+    color: rgb(43, 40, 40);
 }
 
 .whole {
@@ -40,58 +39,37 @@ header, h1 {
 }
 
 .btn {
-    border: none;
-	font-family: @main-font;
+    border: solid 1px rgb(246, 248, 101);
+    border-radius: 10px;
 	font-size: 2rem;
-	color: @text-color;
-	background: @buttons-color;
 	cursor: pointer;
 	display: inline-block;
 	margin: 15px 30px;
 	letter-spacing: 1px;
     outline: none;
     text-decoration: none;
+    text-transform: lowercase;
+    font-family: 'Lobster Two';
+    background-color: transparent;
+    color: rgb(43, 40, 40);
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
     transition: all 0.3s; 
     text-align: center;
-    padding: 25px 60px 25px 60px;
+    padding: 25px 20px 25px 20px;
 	overflow: hidden; 
 }
 
 .btn:hover {
-    background-color: @text-color;
-    color: @buttons-color;
-    width: 40%;
+    background-color: rgb(43, 40, 40);
+    color: rgb(246, 248, 101);
+    border: none;
 }
 
 .btn:before {
     left: auto;
 	right: 10px;
 	z-index: 2;
-}
-
-.veil {
-	content: '';
-	position: absolute;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-    transition: all 0.3s;
-    width: 50%;
-	height: 100%;
-	background: rgba(255,255,255,0.1);
-	z-index: -1;
-	right: 0;
-	top: 0;
-	margin: -5px 0 0 -5px;
-	// -webkit-transform-origin: 0 0;
-	// -webkit-transform: rotate(-20deg);
-	// -moz-transform-origin: 0 0;
-	// -moz-transform: rotate(-20deg);
-	// -ms-transform-origin: 0 0;
-	// -ms-transform: rotate(-20deg);
-	// transform-origin: 0 0;
-//	transform: rotate(-20deg);
 }
 
 .modal {
@@ -112,10 +90,15 @@ header, h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: @buttons-color;
     padding: 1rem 1.5rem;
     width: 24rem;
     border-radius: 0.5rem;
+    color: rgb(43, 40, 40);
+    background-color: rgb(246, 248, 101);
+}
+
+h2, h3 {
+    font-family: 'Lobster Two';
 }
 
 .close {
@@ -139,12 +122,12 @@ header, h1 {
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
-h2, p {
-    font-family: @main-font;
-    color: @text-color;
+footer {
+    background-color: #000;
+    color: rgb(246, 248, 101);
+    padding: 5%;
 }
 
-footer {
-    background-color:@footer-color;
-    padding: 5%;
+footer a {
+    color: rgb(246, 248, 101);
 }
