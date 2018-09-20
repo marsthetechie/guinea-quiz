@@ -4,10 +4,61 @@ body {
     padding: 0;
     text-align: center;
     background: url("../imgs/pattern.svg");
+    font-family: 'Lato';
 }
 
-button {
+a {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
+
+a:hover {
+    color: rgb(246, 248, 101);
+}
+
+h1 {
     padding: 10px;
-    margin: 10px;
+    font-weight: bold;
+    font-family: 'Lobster Two';
 }
 
+.btn {
+    border: hidden;
+    border-radius: 10px;
+	font-size: 2rem;
+	cursor: pointer;
+	display: inline-block;
+	margin: 15px 30px;
+	letter-spacing: 1px;
+    outline: none;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-family: 'Lobster Two';
+    background-color: rgb(246, 248, 101);
+    color: rgb(43, 40, 40);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+    transition: all 0.3s; 
+    text-align: center;
+    padding: 25px 20px 25px 20px;
+	overflow: hidden; 
+}
+
+.btn:hover {
+    background-color: rgb(43, 40, 40);
+    color: rgb(246, 248, 101);
+    border: none;
+}
+
+#quest {
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#quest p {
+    font-size: 20px;
+}
