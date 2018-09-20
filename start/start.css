@@ -1,0 +1,13 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: url("../imgs/pattern.svg");
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+}
+
