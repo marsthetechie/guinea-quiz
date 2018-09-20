@@ -6,3 +6,6 @@ Be truthful with your answers and our little program will suggest the best match
 At this moment our database has four types of guinea pigs: The American, The Abyssinian, The Peruvian and The Silkie. 
 There will be more pigs added.
 
+## Preview
+
+To preview and try this app, visit https://marsthetechie.github.io/guinea-quiz/ .
